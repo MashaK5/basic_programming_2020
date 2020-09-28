@@ -1,0 +1,32 @@
+package tests
+
+import me.maria.fibonacci
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.Assertions.*
+
+internal class FibonacciTest {
+
+    @Test
+    fun `Zero`(){
+        val result = 0
+        assertEquals(result, fibonacci(0))
+    }
+
+    @Test
+    fun `First`(){
+        val result = 1
+        assertEquals(result, fibonacci(1))
+    }
+
+    @Test
+    fun `Second`(){
+        val result = 1
+        assertEquals(result, fibonacci(2))
+    }
+
+    @Test
+    fun `10`(){
+        val result = 55
+        assertEquals(result, fibonacci(10))
+    }
+}
